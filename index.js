@@ -29,16 +29,12 @@ CSSSplitWebpackPlugin.prototype.apply = function (compiler) {
         })]
       }, [])
 
-      console.info(htmlPluginData.assets.css)
       callback(null, htmlPluginData)
 
     })
   })
 
   compiler.plugin("emit", function (compilation, callback) {
-
-    console.info(Object.entries(compilation.assets)
-      .filter(([fileName]) => isCSSSuffix(fileName)))
 
     Object.entries(compilation.assets)
 

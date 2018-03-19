@@ -40,6 +40,8 @@ CSSSplitWebpackPlugin.prototype.apply = function (compiler) {
 
       .filter(([fileName]) => isCSSSuffix(fileName))
 
+      .filter(([fileName, concatSource]) => "children" in concatSource)
+
       .map(([fileName, concatSource]) => {
 
         let fileContent = concatSource["children"].reduce((target, content) => {

@@ -30,3 +30,5 @@ module.exports = {
 }
 
 ```
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jojoLockLock/css-split-webpack-plugin.svg)](https://greenkeeper.io/)
